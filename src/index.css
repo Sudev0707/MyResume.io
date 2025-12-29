@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* ResumeLink Color Palette: Deep Purple (#450693) & Cream (#F9F8F6) */
+    --background: 40 33% 97%; /* #F9F8F6 cream */
+    --foreground: 272 93% 20%; /* Deep purple text */
+
+    --card: 0 0% 100%; /* White cards */
+    --card-foreground: 272 93% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 272 93% 20%;
+
+    --primary: 272 93% 30%; /* #450693 deep purple */
+    --primary-foreground: 0 0% 100%; /* White text on purple */
+    
+    --primary-light: 272 93% 45%; /* Lighter purple for hovers */
+    --primary-glow: 272 93% 65%; /* Glow effect */
+
+    --secondary: 272 50% 96%; /* Very light purple */
+    --secondary-foreground: 272 93% 30%;
+
+    --muted: 40 20% 92%;
+    --muted-foreground: 272 30% 45%;
+
+    --accent: 272 93% 30%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 272 30% 88%;
+    --input: 272 20% 90%;
+    --ring: 272 93% 30%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(272 93% 30%), hsl(272 93% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(272 93% 30%) 0%, hsl(272 93% 50%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(40 33% 99%) 100%);
+    
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(272 93% 30% / 0.2);
+    --shadow-glow: 0 0 40px hsl(272 93% 65% / 0.3);
+    --shadow-card: 0 4px 20px hsl(272 30% 20% / 0.08);
+    
+    /* Animation */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 272 50% 8%;
+    --foreground: 40 33% 97%;
+
+    --card: 272 40% 12%;
+    --card-foreground: 40 33% 97%;
+
+    --popover: 272 40% 12%;
+    --popover-foreground: 40 33% 97%;
+
+    --primary: 272 93% 65%;
+    --primary-foreground: 272 93% 10%;
+    
+    --primary-light: 272 93% 75%;
+    --primary-glow: 272 93% 80%;
+
+    --secondary: 272 40% 18%;
+    --secondary-foreground: 40 33% 97%;
+
+    --muted: 272 30% 20%;
+    --muted-foreground: 272 20% 65%;
+
+    --accent: 272 93% 65%;
+    --accent-foreground: 272 93% 10%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 272 30% 25%;
+    --input: 272 30% 20%;
+    --ring: 272 93% 65%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(272 93% 50%), hsl(272 93% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(272 93% 50%) 0%, hsl(272 93% 70%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(272 40% 12%) 0%, hsl(272 40% 15%) 100%);
+    
+    --shadow-elegant: 0 10px 30px -10px hsl(272 93% 65% / 0.3);
+    --shadow-glow: 0 0 40px hsl(272 93% 80% / 0.4);
+    --shadow-card: 0 4px 20px hsl(272 93% 5% / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

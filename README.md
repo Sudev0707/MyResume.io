@@ -208,4 +208,4 @@ If you have any questions or need help:
 
 ---
 
-**Made with ❤️ for job seekers and recruiters worldwide**
+**Building with ❤️ for job seekers and recruiters worldwide**
